@@ -1,0 +1,603 @@
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> blobcomments-pa.clients6.google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44470
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;blobcomments-pa.clients6.google.com. IN	ANY
+
+;; ANSWER SECTION:
+blobcomments-pa.clients6.google.com. 204 IN A	142.251.37.170
+blobcomments-pa.clients6.google.com. 204 IN AAAA 2a00:1450:4006:811::200a
+
+;; Query time: 36 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 108
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> clients.l.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28611
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;clients.l.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+clients.l.google.com.	106	IN	A	142.251.37.174
+clients.l.google.com.	13	IN	AAAA	2a00:1450:4006:811::200e
+
+;; Query time: 28 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 93
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> docs.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64369
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;docs.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+docs.google.com.	64	IN	A	172.217.18.238
+docs.google.com.	138	IN	AAAA	2a00:1450:4006:802::200e
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 88
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> drive.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40416
+;; flags: qr rd ra; QUERY: 1, ANSWER: 8, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;drive.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+drive.google.com.	204	IN	A	172.217.19.46
+drive.google.com.	204	IN	AAAA	2a00:1450:4006:805::200e
+drive.google.com.	86304	IN	TXT	"google-site-verification=pGMCXdTAsGW_L3o1ks9eToJ4g1R-l3r8TcXdkcA9RqY"
+drive.google.com.	86304	IN	MX	5 gmr-smtp-in.l.google.com.
+drive.google.com.	86304	IN	MX	40 alt4.gmr-smtp-in.l.google.com.
+drive.google.com.	86304	IN	MX	20 alt2.gmr-smtp-in.l.google.com.
+drive.google.com.	86304	IN	MX	30 alt3.gmr-smtp-in.l.google.com.
+drive.google.com.	86304	IN	MX	10 alt1.gmr-smtp-in.l.google.com.
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 284
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> fonts.gstatic.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 33182
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;fonts.gstatic.com.		IN	ANY
+
+;; ANSWER SECTION:
+fonts.gstatic.com.	161	IN	A	142.251.37.35
+fonts.gstatic.com.	99	IN	AAAA	2a00:1450:4006:810::2003
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 90
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> googlehosted.l.googleusercontent.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34534
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;googlehosted.l.googleusercontent.com. IN ANY
+
+;; ANSWER SECTION:
+googlehosted.l.googleusercontent.com. 223 IN A	142.250.203.225
+googlehosted.l.googleusercontent.com. 26 IN AAAA 2a00:1450:4006:800::2001
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 109
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> ipv4only.arpa
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35021
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;ipv4only.arpa.			IN	ANY
+
+;; ANSWER SECTION:
+ipv4only.arpa.		41605	IN	A	192.0.0.171
+ipv4only.arpa.		41605	IN	A	192.0.0.170
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 74
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> peoplestack-pa.clients6.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50418
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;peoplestack-pa.clients6.google.com. IN	ANY
+
+;; ANSWER SECTION:
+peoplestack-pa.clients6.google.com. 218	IN A	142.250.201.42
+
+;; Query time: 28 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 79
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> peoplestackwebexperiments-pa.clients6.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 1758
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;peoplestackwebexperiments-pa.clients6.google.com. IN ANY
+
+;; ANSWER SECTION:
+peoplestackwebexperiments-pa.clients6.google.com. 68 IN	A 142.251.37.42
+peoplestackwebexperiments-pa.clients6.google.com. 68 IN	AAAA 2a00:1450:4006:80f::200a
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 121
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> play.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24937
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;play.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+play.google.com.	112	IN	A	142.250.201.14
+play.google.com.	292	IN	AAAA	2a00:1450:4006:80e::200e
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 88
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> plus.l.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 19853
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;plus.l.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+plus.l.google.com.	123	IN	A	216.58.198.78
+plus.l.google.com.	238	IN	AAAA	2a00:1450:4006:80a::200e
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 90
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> prod.detectportal.prod.cloudops.mozgcp.net
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 33056
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;prod.detectportal.prod.cloudops.mozgcp.net. IN ANY
+
+;; ANSWER SECTION:
+prod.detectportal.prod.cloudops.mozgcp.net. 847	IN A 34.107.221.82
+prod.detectportal.prod.cloudops.mozgcp.net. 1399 IN AAAA 2600:1901:0:38d7::
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 115
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> ssl.gstatic.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58257
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;ssl.gstatic.com.		IN	ANY
+
+;; ANSWER SECTION:
+ssl.gstatic.com.	57	IN	A	142.250.203.227
+ssl.gstatic.com.	277	IN	AAAA	2a00:1450:4006:800::2003
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 88
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> www.gstatic.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41222
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;www.gstatic.com.		IN	ANY
+
+;; ANSWER SECTION:
+www.gstatic.com.	191	IN	A	216.58.198.67
+www.gstatic.com.	128	IN	AAAA	2a00:1450:4006:80a::2003
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 88
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> accounts-cctld.l.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3693
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;accounts-cctld.l.google.com.	IN	ANY
+
+;; ANSWER SECTION:
+accounts-cctld.l.google.com. 204 IN	A	108.177.127.94
+accounts-cctld.l.google.com. 204 IN	AAAA	2a00:1450:4013:c07::5e
+
+;; Query time: 40 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 100
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> accounts.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 5050
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;accounts.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+accounts.google.com.	111	IN	A	172.217.218.84
+accounts.google.com.	189	IN	AAAA	2a00:1450:4013:c08::54
+
+;; Query time: 28 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 92
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> addons-pa.clients6.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22202
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;addons-pa.clients6.google.com.	IN	ANY
+
+;; ANSWER SECTION:
+addons-pa.clients6.google.com. 83 IN	A	142.251.37.234
+addons-pa.clients6.google.com. 170 IN	AAAA	2a00:1450:4006:800::200a
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 102
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> drive.fife.usercontent.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57305
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;drive.fife.usercontent.google.com. IN	ANY
+
+;; ANSWER SECTION:
+drive.fife.usercontent.google.com. 204 IN A	172.217.21.1
+drive.fife.usercontent.google.com. 204 IN AAAA	2a00:1450:4006:808::2001
+
+;; Query time: 28 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 106
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> fonts.googleapis.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2541
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;fonts.googleapis.com.		IN	ANY
+
+;; ANSWER SECTION:
+fonts.googleapis.com.	293	IN	A	172.217.171.202
+fonts.googleapis.com.	9	IN	AAAA	2a00:1450:4006:803::200a
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 93
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> lh2.l.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 55668
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;lh2.l.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+lh2.l.google.com.	238	IN	AAAA	2a00:1450:4006:80f::200e
+
+;; Query time: 36 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 73
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> ogads-pa.clients6.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 59211
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;ogads-pa.clients6.google.com.	IN	ANY
+
+;; ANSWER SECTION:
+ogads-pa.clients6.google.com. 122 IN	A	142.251.37.42
+
+;; Query time: 28 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 73
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> people-pa.clients6.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18728
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;people-pa.clients6.google.com.	IN	ANY
+
+;; ANSWER SECTION:
+people-pa.clients6.google.com. 4 IN	A	142.250.203.234
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 74
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> pki-goog.l.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57561
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;pki-goog.l.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+pki-goog.l.google.com.	82	IN	A	216.58.205.195
+pki-goog.l.google.com.	214	IN	AAAA	2a00:1450:4006:807::2003
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 94
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> signaler-pa.clients6.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34763
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;signaler-pa.clients6.google.com. IN	ANY
+
+;; ANSWER SECTION:
+signaler-pa.clients6.google.com. 23 IN	A	142.250.201.42
+signaler-pa.clients6.google.com. 97 IN	AAAA	2a00:1450:4006:800::200a
+
+;; Query time: 28 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 104
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> waa-pa.clients6.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40874
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;waa-pa.clients6.google.com.	IN	ANY
+
+;; ANSWER SECTION:
+waa-pa.clients6.google.com. 77	IN	A	216.58.205.202
+waa-pa.clients6.google.com. 106	IN	AAAA	2a00:1450:4006:810::200a
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 99
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> us-west1.prod.sumo.prod.webservices.mozgcp.net
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43151
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;us-west1.prod.sumo.prod.webservices.mozgcp.net.	IN ANY
+
+;; ANSWER SECTION:
+us-west1.prod.sumo.prod.webservices.mozgcp.net.	205 IN A 34.149.128.2
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 91
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> www.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13025
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;www.google.com.			IN	ANY
+
+;; ANSWER SECTION:
+www.google.com.		260	IN	A	142.251.37.36
+www.google.com.		45	IN	AAAA	2a00:1450:4006:810::2004
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 87
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> www3.l.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47574
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;www3.l.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+www3.l.google.com.	140	IN	A	142.250.201.14
+www3.l.google.com.	22	IN	AAAA	2a00:1450:4006:80e::200e
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:18 CET 2024
+;; MSG SIZE  rcvd: 90
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> drive.usercontent.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64290
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;drive.usercontent.google.com.	IN	ANY
+
+;; ANSWER SECTION:
+drive.usercontent.google.com. 299 IN	A	172.217.171.225
+drive.usercontent.google.com. 300 IN	AAAA	2a00:1450:4006:804::2001
+
+;; Query time: 168 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:19 CET 2024
+;; MSG SIZE  rcvd: 101
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>> pki-goog.l.google.com
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18553
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;pki-goog.l.google.com.		IN	ANY
+
+;; ANSWER SECTION:
+pki-goog.l.google.com.	81	IN	A	216.58.205.195
+pki-goog.l.google.com.	213	IN	AAAA	2a00:1450:4006:807::2003
+
+;; Query time: 32 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:19 CET 2024
+;; MSG SIZE  rcvd: 94
+
+; <<>> DiG 9.18.18-0ubuntu2.1-Ubuntu <<>>
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22437
+;; flags: qr rd ra; QUERY: 1, ANSWER: 13, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;.				IN	NS
+
+;; ANSWER SECTION:
+.			7104	IN	NS	i.root-servers.net.
+.			7104	IN	NS	a.root-servers.net.
+.			7104	IN	NS	h.root-servers.net.
+.			7104	IN	NS	f.root-servers.net.
+.			7104	IN	NS	b.root-servers.net.
+.			7104	IN	NS	m.root-servers.net.
+.			7104	IN	NS	l.root-servers.net.
+.			7104	IN	NS	d.root-servers.net.
+.			7104	IN	NS	e.root-servers.net.
+.			7104	IN	NS	c.root-servers.net.
+.			7104	IN	NS	k.root-servers.net.
+.			7104	IN	NS	g.root-servers.net.
+.			7104	IN	NS	j.root-servers.net.
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (TCP)
+;; WHEN: Fri Mar 29 14:16:19 CET 2024
+;; MSG SIZE  rcvd: 239
+
