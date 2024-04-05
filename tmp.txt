@@ -1,0 +1,204 @@
+
+
+
+
+
+
+
+
+
+
+Here are some questions I need to anwser :
+
+When IPv4 is used, does the application use techniques to traverse NATs ?
+What addresses are packets sent to ? Find out which names domain they match, do you observe a particular trend in the family address? Can you explain it ?
+
+Can you anwser to those with the following informations ?
+
+traceroute to drive.google.com (142.250.179.206), 30 hops max, 60 byte packets
+ 1  192.168.0.1  0.962 ms  0.835 ms  0.934 ms -> wifi bridge
+ 2  192.168.1.1  14.012 ms  12.580 ms  12.513 ms -> Router
+ 3  10.24.145.10  29.943 ms  31.136 ms  29.085 ms -> ?
+ 4  * * *
+ 5  91.183.242.132  27.357 ms  30.648 ms  30.833 ms -> Belgacom/Proximus (BE)
+ 6  91.183.246.86  30.739 ms  30.748 ms  30.750 ms -> Belgacom/Proximus (BE)
+ 7  91.183.245.122  34.216 ms  36.987 ms  34.641 ms -> Belgacom/Proximus (BE)
+ 8  108.170.241.161  35.905 ms  35.487 ms  40.949 ms -> Google (US)
+ 9  142.251.48.181  34.975 ms  34.316 ms  41.689 ms -> Google (US)
+10  142.250.179.206  35.618 ms *  40.581 ms -> Google (US)
+
+
+IPv4 addresses :
+	10.131.21.164 - Internet Assigned Numbers Authority (IANA) (US) - Device on private network
+	127.0.0.1 - Internet Assigned Numbers Authority (IANA) (US) - localhost / loopback
+	127.0.0.53 - Internet Assigned Numbers Authority (IANA) (US) - DNS resolution
+	142.250.179.174 - Google (US) - Unknown
+	142.250.179.193 - Google (US) - Unknown
+	142.250.179.206 - Google (US) - Unknown
+	192.168.1.1 - Internet Assigned Numbers Authority (IANA) (US) - Router
+	192.168.1.7 - Internet Assigned Numbers Authority (IANA) (US) - Device on private network
+
+IPv6 addresses :
+	2a00:1450:400c:c06::54 - Google (IE)
+	2a00:1450:400e:803::200e - Google (IE)
+	2a00:1450:400e:805::200a - Google (IE)
+	2a00:1450:400e:805::200e - Google (IE)
+	2a00:1450:400e:80d::200e - Google (IE)
+	2a00:1450:400e:80e::200e - Google (IE)
+	2a00:1450:400e:80f::2003 - Google (IE)
+	2a00:1450:400e:810::200e - Google (IE)
+	2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 - Belgacom/Proximus (BE)
+	fe80::42c7:29ff:fe68:2cbb - link-local address
+	ff02::1:ffe0:2b17 - 
+
+Notes :
+	IP addresses beginning with 10 or 192.168 : These addresses are in use by many millions of independently operated networks, which might be as small as a single computer connected to a home gateway, and are automatically configured in hundreds of millions of devices. They are only intended for use within a private context  and traffic that needs to cross the Internet will need to use a different, unique address.
+	IP addresses beginning with 127 : These addresses are used when one program needs to talk to another program running on the same machine using the Internet.
+
+
+
+
+
+Here are some traces, for each one of these, you can find the IPv4 and IPv6 sources and destinations with the percentage of packets sent to them or sent by them.
+
+download_txt.pcapng :
+	IPv4 src (19) :
+		15 ip addresses which each sent less than 5% of the packets
+		142.250.179.193 (8%)
+		10.131.21.164 (21%)
+		192.168.1.7 (22%)
+		193.32.126.67 (27%) ! do not used, it was wireguard
+	IPv4 dst (19) :
+		15 ip addresses which each received less than 5% of the packets
+		142.250.179.193 (7%)
+		193.32.126.67 (22%)
+		10.131.21.164 (26%)
+		192.168.1.7 (27%)
+	IPv6 src (1) :
+		0 ip addresses which each sent less than 5% of the packets
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (100%)
+	IPv6 dst (1) :
+		0 ip addresses which each received less than 5% of the packets
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (100%)
+
+import_file_txt.pcapng :
+	IPv4 src (10) :
+		6 ip addresses which each sent less than 5% of the packets
+		192.168.1.1 (9%)
+		192.168.1.7 (13%)
+		127.0.0.1 (36%)
+		127.0.0.53 (36%)
+	IPv4 dst (11) :
+		7 ip addresses which each received less than 5% of the packets
+		192.168.1.1 (7%)
+		192.168.1.7 (13%)
+		127.0.0.1 (36%)
+		127.0.0.53 (36%)
+	IPv6 src (20) :
+		16 ip addresses which each sent less than 5% of the packets
+		2a00:1450:400e:80e::200e (10%)
+		2a00:1450:400e:803::200e (12%)
+		2a00:1450:400e:80d::200e (21%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (42%)
+	IPv6 dst (20) :
+		16 ip addresses which each received less than 5% of the packets
+		2a00:1450:400e:80e::200e (6%)
+		2a00:1450:400e:80d::200e (9%)
+		2a00:1450:400e:803::200e (14%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (58%)
+
+moving_file.pcapng :
+	IPv4 src (9) :
+		6 ip addresses which each sent less than 5% of the packets
+		192.168.1.7 (14%)
+		127.0.0.1 (33%)
+		127.0.0.53 (33%)
+	IPv4 dst (9) :
+		5 ip addresses which each received less than 5% of the packets
+		192.168.1.255 (5%) ! do not use, it was from another device
+		192.168.1.7 (13%)
+		127.0.0.1 (33%)
+		127.0.0.53 (33%)
+	IPv6 src (14) :
+		9 ip addresses which each sent less than 5% of the packets
+		2a00:1450:400e:805::200e (6%)
+		2a00:1450:400e:805::200a (9%)
+		2a00:1450:400e:803::200e (12%)
+		2a00:1450:400e:810::200e (13%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (49%)
+	IPv6 dst (14) :
+		10 ip addresses which each received less than 5% of the packets
+		2a00:1450:400e:805::200a (8%)
+		2a00:1450:400e:803::200e (12%)
+		2a00:1450:400e:810::200e (18%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (50%)
+
+share_file.pcapng :
+	IPv4 src (11) :
+		7 ip addresses which each sent less than 5% of the packets
+		192.168.1.1 (5%)
+		192.168.1.7 (12%)
+		127.0.0.1 (38%)
+		127.0.0.53 (38%)
+	IPv4 dst (12) :
+		9 ip addresses which each received less than 5% of the packets
+		192.168.1.7 (12%)
+		127.0.0.1 (38%)
+		127.0.0.53 (38%)
+	IPv6 src (17) :
+		13 ip addresses which each sent less than 5% of the packets
+		2a00:1450:400e:80d::200e (7%)
+		2a00:1450:400e:805::200e (9%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (33%)
+		2a00:1450:400e:80f::2003 (35%)
+	IPv6 dst (17) :
+		13 ip addresses which each received less than 5% of the packets
+		2a00:1450:400e:80f::2003 (6%)
+		2a00:1450:400e:805::200e (7%)
+		2a00:1450:400e:803::200e (8%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (67%)
+
+sign_in_slow.pcapng :
+	IPv4 src (13) :
+		9 ip addresses which each sent less than 5% of the packets
+		192.168.1.1 (9%)
+		192.168.1.7 (16%)
+		127.0.0.1 (33%)
+		127.0.0.53 (33%)
+	IPv4 dst (14) :
+		10 ip addresses which each received less than 5% of the packets
+		192.168.1.1 (8%)
+		192.168.1.7 (16%)
+		127.0.0.1 (33%)
+		127.0.0.53 (33%)
+	IPv6 src (25) :
+		22 ip addresses which each sent less than 5% of the packets
+		2a00:1450:400e:80d::200e (5%)
+		2a00:1450:400c:c06::54 (28%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (35%)
+	IPv6 dst (27) :
+		25 ip addresses which each received less than 5% of the packets
+		2a00:1450:400c:c06::54 (6%)
+		2a02:a03f:c093:d200:bed2:c44a:a2bf:1355 (65%)
+
+wait_file.pcapng :
+	IPv4 src (19) :
+		14 ip addresses which each sent less than 5% of the packets
+		127.0.0.1 (6%)
+		127.0.0.53 (6%)
+		142.250.179.206 (7%)
+		142.250.179.174 (16%)
+		192.168.1.7 (47%)
+	IPv4 dst (20) :
+		15 ip addresses which each received less than 5% of the packets
+		127.0.0.1 (6%)
+		127.0.0.53 (6%)
+		142.250.179.206 (9%)
+		142.250.179.174 (21%)
+		192.168.1.7 (41%)
+	IPv6 src (1) :
+		0 ip addresses which each sent less than 5% of the packets
+		fe80::42c7:29ff:fe68:2cbb (100%)
+	IPv6 dst (1) :
+		0 ip addresses which each received less than 5% of the packets
+		ff02::1:ffe0:2b17 (100%)
